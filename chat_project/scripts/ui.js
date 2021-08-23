@@ -1,3 +1,24 @@
 // class for ui
 // render chat templates to the DOM
 // clear the list of chats (when the room changes)
+
+class ChatUI {
+    constructor(list){
+        this.list = list;
+    }
+    render(data){   // single chat-data object
+        const when = dateFns.distanceInWordsToNow(
+            data.created_at.toDate(),
+            { addSuffix: true }
+        );
+        const html = `
+            <li class="list-group-item">
+                <span class="username">${data.username}</span>
+                <span class="message">${data.message}</span>
+                <div class="time">${when}</div>
+            </li>
+        `;
+
+        this.list.innerHTML += html;
+    }
+}
