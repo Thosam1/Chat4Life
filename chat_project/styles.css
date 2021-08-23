@@ -4,7 +4,7 @@
 }
 
 .btn{                   /* for the buttons */
-    background: #43d9be;
+    background: #e96082;
     color: white;
     outline: none !important;
     box-shadow: none !important;
@@ -21,4 +21,9 @@
 .time{
     font-size: 0.7em;
     color: #999;
+}
+
+.update-mssg{
+    text-align: center;
+    margin: 20px auto;
 }
