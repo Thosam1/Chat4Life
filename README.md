@@ -1,5 +1,9 @@
 # Chat4Life
 
+simple app made using javascript, html, css, bootstrap, date-fns library, firebase 
+the goal was to practice : classes, async functions, callbacks, communication between the app and firebase, storing data locally
+
+
 ## Usage :
 run the html file, update your name and start tchatting in the right channel/room
 
